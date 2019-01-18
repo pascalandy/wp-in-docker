@@ -23,6 +23,7 @@ docker swarm init --advertise-addr $(hostname -i)                       && \
 # On play-with-docker, clone repo
 echo                                                                    && \
 cd /root                                                                && \
-git clone https://github.com/pascalandy/wp-in-docker.git --depth        && \
+git clone https://github.com/pascalandy/wp-in-docker.git --depth 1      && \
 cd wp-in-docker                                                         && \
+docker-compose up -d                                                    && \
 echo;
